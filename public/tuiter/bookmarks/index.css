@@ -3,7 +3,7 @@ html {
     background-color: black;
     font-family: 'Roboto';
     color: white;
-    max-width: 590px;
+    max-width: 600px;
 }
 
 a {
@@ -44,7 +44,7 @@ p, .wd-interact-banner>* {
 
 
 .wd-interact-banner {
-    padding-left: 16px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,7 +66,6 @@ p, .wd-interact-banner>* {
 }
 
 .wd-tuit-body {
-    max-width: 506px;
     margin: 4px 0 0;
     font-size: 15px;
     color: white;
@@ -84,6 +83,8 @@ p, .wd-interact-banner>* {
 }
 
 .wd-tuit-content {
+    max-width: 518px;
+
     margin-left: 12px;
 }
 
@@ -94,7 +95,7 @@ p, .wd-interact-banner>* {
 
 .wd-hyperlink-container {
 
-    margin: 0 16px 12px;
+    margin: 0 16px 12px 12px;
     max-width: 504px;
     border-radius: 1rem;
     border: 1px solid  rgb(47, 51, 54);
