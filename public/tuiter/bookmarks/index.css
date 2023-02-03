@@ -32,15 +32,22 @@ h1 {
 }
 
 
-p, .wd-interact-banner>*, .wd-hyperlink {
+p, .wd-interact-banner>* {
     color: rgb(110,118,125);
     font-size: 13px;
 }
 
+.wd-hyperlink, .wd-hyperlink-body {
+    color: rgb(110,118,125);
+    font-size: 15px;
+}
+
+
 .wd-interact-banner {
+    padding-left: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 12px;
 }
 
@@ -60,10 +67,13 @@ p, .wd-interact-banner>*, .wd-hyperlink {
 
 .wd-tuit-body {
     max-width: 506px;
-    margin: 4px 0 12px;
+    margin: 4px 0 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
 }
 
-.wd-tuit-author {
+.wd-tuit-author, .wd-hyperlink-title {
     height: fit-content;
     font-size: 15px;
     font-weight: 700;
@@ -94,8 +104,8 @@ p, .wd-interact-banner>*, .wd-hyperlink {
 .wd-hyperlink-container>img{
     width: 504px;
     height: 264px;
-    border: 1px solid  rgb(47, 51, 54);
-
+    border-bottom: 1px solid  rgb(47, 51, 54);
+    font-size: 15px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -134,3 +144,4 @@ p, .wd-interact-banner>*, .wd-hyperlink {
 .wd-toggle-like {
     color: red;
 }
+
