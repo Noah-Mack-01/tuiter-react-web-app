@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,37 +16,38 @@
             <h1>Bookmarks</h1>
             <p class="wd-tuit-info">@Webdev</p>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#6e767d" viewBox="0 0 24 24" stroke="#6e767d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g></svg>        
+        <svg width="20px" fill="#1da1f2" viewBox="0 0 8.00 8.00" xmlns="http://www.w3.org/2000/svg" stroke="#1da1f2" stroke-width="0.00008"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 0v2h2v-2h-2zm3 0v2h2v-2h-2zm3 0v2h2v-2h-2z" transform="translate(0 3)"></path> </g></svg>
     </header> <!--A-->
-    <div>
+    <div class="wd-container">
 
-        <div>
+        <div class="wd-tuit-box">
 
             <div class="wd-tuit">
+                <img class="wd-profile-pic" src="../profile-pic.png" alt="avatar"><!--B-->
 
-                <div>
+                <div class="wd-tuit-content">
 
                     <div class="wd-tuit-author">
-                        <p class="wd-author"><span class="wd-tuit-info"></span></p>
-                        <svg></svg> <!--Ellipses-->
+                        Robert Zubrin <span class="wd-tuit-info">@robert_zubrin . Jul 31</span>
                     </div>
 
-                    <p class="wd-tuit-body"></p><!--D-->
+                    <p class="wd-tuit-body">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p><!--D-->
 
                 </div><!--C,D-->
 
-                <img alt="avatar"><!--B-->
 
             </div> <!--B,C,D-->
 
-            <div>
+            <div class="wd-hyperlink-container">
 
-                <img><!--E-->
+                <img src="../images.jpeg" ><!--E-->
 
                 <div>
-                    <p class="wd-hyperlink-title"></p>
-                    <p class="wd-hyperlink-body"></p>
-                    <div class="wd-hyperlink"><img><a></a></div>
+                    <p class="wd-hyperlink-title">Lorem ipsum title test</p>
+                    <p class="wd-hyperlink-body">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+                    <p class="wd-hyperlink"><img><a>rt.com</a></p>
                 </div><!--F-->
 
             </div><!--E,F-->
@@ -50,21 +55,20 @@
         </div><!--B, C, D, E, F-->
 
         <div class="wd-interact-banner">
-            <div class="wd-interact-banner-component">
-                <img src="" alt="comment">
-                <p></p>
-            </div>
-            <div class="wd-interact-banner-component">
-                <img src="" alt="retuit">
-                <p></p>
-            </div>
-            <div class="wd-interact-banner-component">
-                <img src="" alt="like">
-                <p></p>
-            </div>
-            <div class="wd-interact-banner-component">
-                <img src="" alt="share">
-            </div>
+            <a href="#" class="wd-interact-banner-component">
+                <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#6e767d" stroke="#6e767d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#6e767d;stroke-miterlimit:10;stroke-width:1.91px;}</style></defs><path class="cls-1" d="M1.5,5.3v9.54a3.82,3.82,0,0,0,3.82,3.82H7.23v2.86L13,18.66h5.73a3.82,3.82,0,0,0,3.82-3.82V5.3a3.82,3.82,0,0,0-3.82-3.82H5.32A3.82,3.82,0,0,0,1.5,5.3Z"></path></g></svg>
+                22
+            </a>
+            <a href="#" class="wd-interact-banner-component">
+                <svg fill="#000000" viewBox="0 0 24 24" id="retweet" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M14,6H4A1,1,0,0,0,3,7V17a1,1,0,0,0,1,1H6" style="fill: none; stroke: #6e7380; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><path id="primary-2" data-name="primary" d="M10,18H20a1,1,0,0,0,1-1V7a1,1,0,0,0-1-1H18" style="fill: none; stroke: #6e7380; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><polyline id="primary-3" data-name="primary" points="12 4 14 6 12 8" style="fill: none; stroke: #6e7380; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline><polyline id="primary-4" data-name="primary" points="12 20 10 18 12 16" style="fill: none; stroke: #6e7380; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline></g></svg>                9
+            </a>
+            <a href="#" class="wd-interact-banner-component">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.44 3.10156C14.63 3.10156 13.01 3.98156 12 5.33156C10.99 3.98156 9.37 3.10156 7.56 3.10156C4.49 3.10156 2 5.60156 2 8.69156C2 9.88156 2.19 10.9816 2.52 12.0016C4.1 17.0016 8.97 19.9916 11.38 20.8116C11.72 20.9316 12.28 20.9316 12.62 20.8116C15.03 19.9916 19.9 17.0016 21.48 12.0016C21.81 10.9816 22 9.88156 22 8.69156C22 5.60156 19.51 3.10156 16.44 3.10156Z" fill="#ff0000"></path> </g></svg>
+                <span class="wd-toggle-like">37</span>
+            </a>
+            <a href="#" class="wd-interact-banner-component">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.5 10H6.5C6.22386 10 6 10.2239 6 10.5V19.5C6 19.7761 6.22386 20 6.5 20H16.5C16.7761 20 17 19.7761 17 19.5V10.5C17 10.2239 16.7761 10 16.5 10H14.5" stroke="#6e7380" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11.5 14V3M11.5 3L8 6M11.5 3L15 6" stroke="#6e7380" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>            
+            </a>
         </div> <!--G-->
 
     </div><!--B,C,D,E,F,G-->
