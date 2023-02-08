@@ -1,0 +1,148 @@
+
+html {
+    background-color: black;
+    font-family: 'Roboto';
+    color: white;
+    max-width: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid  rgb(47, 51, 54);
+}
+
+h1, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+
+p, .wd-interact-banner>* {
+    color: rgb(110,118,125);
+    font-size: 13px;
+}
+
+.wd-hyperlink, .wd-hyperlink-body {
+    color: rgb(110,118,125);
+    font-size: 15px;
+}
+
+
+.wd-interact-banner {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 12px;
+}
+
+.wd-container {
+    border: 1px solid  rgb(47, 51, 54);
+
+}
+
+.wd-tuit {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 12px 16px;
+    color: white;
+}
+
+.wd-tuit-body {
+    margin: 4px 0 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.wd-tuit-author, .wd-hyperlink-title {
+    height: fit-content;
+    font-size: 15px;
+    font-weight: 700;
+}
+.wd-profile-pic {
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-tuit-content {
+    max-width: 518px;
+
+    margin-left: 12px;
+}
+
+.wd-tuit-author>span {
+    color: rgb(110,118,125);
+    font-weight: 500;
+}
+
+.wd-hyperlink-container {
+
+    margin: 0 16px 12px 12px;
+    max-width: 504px;
+    border-radius: 1rem;
+    border: 1px solid  rgb(47, 51, 54);
+}
+
+
+.wd-hyperlink-container>img{
+    width: 504px;
+    height: 264px;
+    border-bottom: 1px solid  rgb(47, 51, 54);
+    font-size: 15px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.wd-hyperlink-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.wd-hyperlink-container>div>p {
+    margin: 2px 0;
+}
+
+.wd-hyperlink-title {
+    color: white;
+    font-weight: 500;
+}
+
+.wd-tuit-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.wd-interact-banner-component {
+    height: 15px;
+    display: flex;
+}
+
+.wd-interact-banner-component>svg {
+    margin-right: 12px;
+}
+
+.wd-toggle-like {
+    color: red;
+}
+
