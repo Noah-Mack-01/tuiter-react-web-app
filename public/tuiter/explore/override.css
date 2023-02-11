@@ -1,0 +1,46 @@
+.col-row-margin-x-override {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wd-avatar-image {
+    height: auto;
+    width: 50px;
+    object-fit: contain;
+}
+
+.wd-image {
+    max-height: 70px;
+}
+
+.btn.override {
+    border-radius: 2rem;
+}
+
+.wd-gray-font {
+    color: gray;
+}
+
+.wd-label-font {
+    font-size: 8pt;
+}
+
+.d-flex-column.override {
+    font-size: 10pt;
+}
+
+.wd-banner-image {
+    max-height: 300px;
+}
+
+p {
+    margin: 0 0;
+}
+
+a {
+    overflow: hidden;
+}
+
+.fa-check.override{
+    color: #0275d8
+}
