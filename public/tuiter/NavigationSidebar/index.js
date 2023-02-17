@@ -3,7 +3,7 @@ import NavigationSidebarStackedItem from "./NavigationItem/stackedItem.js";
 
 const NavigationSidebar = () => {
     return (`
-        <ul class="list-group">
+        <ul class="list-group ms-2">
             ${NavigationSidebarItem("fa-key")}
             ${NavigationSidebarItem("fa-home", "Home")}
             ${NavigationSidebarItem("fa-hashtag", "Explore", true)}
@@ -14,6 +14,7 @@ const NavigationSidebar = () => {
             ${NavigationSidebarItem("fa-user", "Profile")}
             ${NavigationSidebarStackedItem("fa-circle", "fa-ellipsis-h", "More")}
         </ul>
+        <button class="btn btn-primary rounded-pill mt-2 col-11">Tuit</button>
     `);
 }
 
