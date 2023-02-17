@@ -1,3 +1,19 @@
    .fa {
     display: inline;
-   } 
+   }
+   
+   .label {
+      color: gray;
+      font-weight: 400;
+   }
+
+   img.rounded-circle {
+      background-color: white;
+   }
+
+   .position-absolute {
+      top: 490px;
+      font-weight: 800;
+      font-size: 20pt;
+      color: white;
+   }
