@@ -9,11 +9,11 @@ function Tuiter() {
      <div className="col-4 col-md-3 col-lg-3 col-xl-2">
        <NavigationSidebar active="explore"/>
      </div>
-     <div className="col-8 col-md-9 col-lg-5 col-xl-6"
+     <div className="col-8 col-md-9 col-lg-6 col-xl-6"
           style={{"position": "relative"}}>
        <ExploreComponent/>
      </div>
-     <div className="d-sm-none d-md-none d-lg-block col-lg-4">
+     <div className="d-sm-none d-md-none d-lg-block col-lg-3">
        <WhoToFollowList/>
      </div>
    </div>
