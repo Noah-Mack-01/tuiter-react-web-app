@@ -15,7 +15,7 @@ const NavigationSidebar = ({
             <a className={`list-group-item ${active==='lists' ? 'active' : ''}`} href="#lists"><ListUl/> Lists</a>
             <a className={`list-group-item ${active==='profile' ? 'active' : ''}`} href="#profile"><PersonFill/> Profile</a>
             <a className={`list-group-item ${active==='more' ? 'active' : ''}`} href="#more"><Grid1x2Fill/> More</a>
-            <button class="btn btn-primary rounded-pill mt-2">Tuit</button>
+            <button className="btn btn-primary rounded-pill mt-2">Tuit</button>
         </div>
         
     );

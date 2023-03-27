@@ -9,7 +9,7 @@
    "time": "4d",   "image": "tesla.png" },
  {
     "_id": 632, "topic":"Web Development", "userName":"NodeJS", "title":"",
-    "time":"1m", "image":"node.png" 
+    "time":"1m", "image":"./node.png" 
  }
 ]
 
