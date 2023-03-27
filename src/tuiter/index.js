@@ -1,5 +1,5 @@
 import React from "react";
-import ExploreComponent from "./explore";
+
 import HomeComponent from "./home";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
@@ -14,15 +14,16 @@ const store = configureStore(
 
 
 function Tuiter() {
+
  return (
   <Provider store={store}>
    <div className="row mt-2">
      <div className="col-4 col-md-3 col-lg-3 col-xl-2">
-       <NavigationSidebar active="explore"/>
+       <NavigationSidebar active="home"/>
      </div>
      <div className="col-8 col-md-9 col-lg-6 col-xl-6"
           style={{"position": "relative"}}>
-       {<HomeComponent />}
+            <HomeComponent/>
      </div>
      <div className="d-sm-none d-md-none d-lg-block col-lg-3">
        <WhoToFollowList/>

@@ -7,7 +7,7 @@ const currentUser = {
     "image": "nasa.png",
    };
    
-   const templateTuit = {
+const templateTuit = {
     ...currentUser,
     "topic": "Space",
     "time": "2h",
@@ -15,7 +15,7 @@ const currentUser = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
-   }
+   };
    
    const tuitsSlice = createSlice({
     name: 'tuits',

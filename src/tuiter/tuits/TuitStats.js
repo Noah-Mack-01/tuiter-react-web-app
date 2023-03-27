@@ -20,10 +20,10 @@ export default function TuitStats({
 }) {
     return (
         <div className="row d-flex text-center">
-            <div className="col-3"><a href=""><Chat/></a>{` ${post.replies}`}</div>
-            <div className="col-3"><a href="">{!post.liked ? <Heart/> : <HeartFill/>}</a>{` ${post.likes}`}</div>
-            <div className="col-3"><a href=""><ArrowRepeat/></a>{` ${post.retuits}`}</div>
-            <div className="col-3"><a href=""><Share/></a></div>
+            <div className="col-3"><a href="#reply"><Chat/></a>{` ${post.replies}`}</div>
+            <div className="col-3"><a href="#like">{!post.liked ? <Heart/> : <HeartFill/>}</a>{` ${post.likes}`}</div>
+            <div className="col-3"><a href="#retuit"><ArrowRepeat/></a>{` ${post.retuits}`}</div>
+            <div className="col-3"><a href="#share"><Share/></a></div>
         </div>
     );
 }
