@@ -1,6 +1,8 @@
 import React from "react"
 import {Chat, Heart, HeartFill, ArrowRepeat, Share} from "react-bootstrap-icons"
 import { updateTuitThunk } from "../../services/tuit-thunks";
+import { useDispatch } from "react-redux";
+
 
 
 
@@ -25,10 +27,11 @@ export default function TuitStats({
 
 }){
 
+    const dispatch = useDispatch();
     function likeHandler(like) {
         dispatch(updateTuitThunk({
             ...post,
-            likes: (like) ? tuit.likes + 1 : tuit.likes - 1
+            likes: (like) ? post.likes + 1 : post.likes - 1
         }))
     }
 

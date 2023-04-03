@@ -3,21 +3,23 @@ import {useDispatch, useSelector}
   from "react-redux";
 import TuitItem from "./tuit-item";
 import {findTuitsThunk}
-  from "../../services/tuits-thunks";
+  from "../../services/tuit-thunks";
 
-const TuitsList = () => {
-    const {tuits, loading} = useSelector(state => state.tuitsData)
+export default function TuitList() {
+    const {postsArray, loading} = useSelector(state => state.tuitsData)
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
     }, [])
 
     return (
-        <ul className="list-group">
-            {
-            loading &&
-            <li className="list-group-item">Loading...</li>
-     }</ul>
+        <ul className="list-group">{
+          loading && <li className="list-group-item">Loading...</li>
+          }
+          {
+            postsArray.map(post => <TuitItem key={post._id} post={post}/>)
+          }
+     </ul>
     )
 }
 
