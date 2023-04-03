@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
-import TuitItem from "./tuit-item";
 import {findTuitsThunk}
   from "../../services/tuit-thunks";
 
@@ -12,7 +11,7 @@ export default function TuitList() {
         dispatch(findTuitsThunk())
         console.log(postsArray);
 
-    },[dispatch])
+    },[dispatch, postsArray])
 
     return (
         <ul className="list-group">{
