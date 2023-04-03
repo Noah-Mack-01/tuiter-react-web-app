@@ -10,14 +10,13 @@ export default function TuitList() {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    })
+        console.log(postsArray);
+
+    },[dispatch])
 
     return (
         <ul className="list-group">{
           loading && <li className="list-group-item">Loading...</li>
-          }
-          {
-            postsArray.map(post => <TuitItem key={post._id} post={post}/>)
           }
      </ul>
     )
