@@ -19,7 +19,7 @@ export default function TuitList() {
           loading && <li className="list-group-item">Loading...</li>
           }
         {
-          postsArray.map(post => <TuitItem key={post._id} post={post}/>)
+          postsArray && postsArray.map(post => <TuitItem key={post._id} post={post}/>)
         }
      </ul>
     )
