@@ -11,7 +11,8 @@ export default function TuitList() {
     useEffect(() => {
         dispatch(findTuitsThunk())
         console.log("Posts" + tuits);
-    },[dispatch])
+// eslint-disable-next-line
+    },[])
 
     return (
         <ul className="list-group">
