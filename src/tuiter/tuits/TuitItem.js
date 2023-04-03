@@ -24,7 +24,7 @@ export default function TuitItem({
 }) {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return (
     <div className="list-group-item">

@@ -1,5 +1,7 @@
 import React from "react"
 import {Chat, Heart, HeartFill, ArrowRepeat, Share} from "react-bootstrap-icons"
+import { updateTuitThunk } from "../../services/tuit-thunks";
+
 
 
 export default function TuitStats({
@@ -17,13 +19,25 @@ export default function TuitStats({
         "handle": "@spacex",
         "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
     }
-}) {
+
+    
+
+
+}){
+
+    function likeHandler(like) {
+        dispatch(updateTuitThunk({
+            ...post,
+            likes: (like) ? tuit.likes + 1 : tuit.likes - 1
+        }))
+    }
+
     return (
         <div className="row d-flex text-center">
-            <div className="col-3"><a href="#reply"><Chat/></a>{` ${post.replies}`}</div>
-            <div className="col-3"><a href="#like">{!post.liked ? <Heart/> : <HeartFill/>}</a>{` ${post.likes}`}</div>
-            <div className="col-3"><a href="#retuit"><ArrowRepeat/></a>{` ${post.retuits}`}</div>
-            <div className="col-3"><a href="#share"><Share/></a></div>
+            <div className="col-3"><Chat/>{` ${post.replies}`}</div>
+            <div className="col-3">{!post.liked ? <Heart onClick={likeHandler(true)}/> : <HeartFill onClick={likeHandler(false)}/>}{` ${post.likes}`}</div>
+            <div className="col-3"><ArrowRepeat/>{` ${post.retuits}`}</div>
+            <div className="col-3"><Share/></div>
         </div>
     );
 }
